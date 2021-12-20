@@ -7,11 +7,16 @@ body{
     background-color:#181a1b;
 }
 
+p, h1{
+    word-spacing: normal;
+}
+
 .carrossel{
     width: max-content;
     position: relative;
     margin: left;
 }
+
 .fade img{
     height: 400px;
     width: 800px;
@@ -65,13 +70,29 @@ a{
     padding: 10px;
     color: white;
 }
+@media(max-width: 2560px){
+    body{
+        font-size: larger;
+    }
+}
 
 @media(max-width: 820px){
     
     
     img{
-        max-height: 300px;
+        height: 300px;
         max-width: 500px;
+    }
+
+    
+    .fade img{
+        height: 300px;
+        max-width: 500px;
+    }
+
+
+    .box{
+        width: 500;
     }
 
     .carrossel{
@@ -95,6 +116,10 @@ a{
         align-items: center;
     }
 
+    .footer{
+        width: 520px;
+    }
+
     .text .box{
         max-width: 500px;
     }
@@ -116,7 +141,12 @@ a{
     }
 
     img{
-        max-height: 200px;
+        height: 200px;
+        width: 300px;
+    }
+
+    .fade img{
+        height: 200px;
         max-width: 300px;
     }
 
@@ -142,4 +172,9 @@ a{
     .box{
         width: 300px;
     }
+
+    .footer{
+        width: 320px;
+    }
+
 }
